@@ -1,14 +1,26 @@
 {
-  "name" : "Pod::EOD",
-  "license" : "MIT",
-  "source-url" : "https://github.com/hoelzro/p6-pod-eod.git",
-  "perl" : "6.c",
-  "provides" : {
-    "Pod::EOD" : "lib/Pod/EOD.pm"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Rob Hoelz",
+    "Raku Comunity"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Moves declarative POD blocks to the end of the POD",
+  "license": "MIT",
+  "name": "Pod::EOD",
+  "perl": "6.c",
+  "provides": {
+    "Pod::EOD": "lib/Pod/EOD.rakumod"
   },
-  "description" : "Moves declarative POD blocks to the end of the POD, allowing for end-of-document style POD",
-  "version" : "0.1.0",
-  "authors" : [
-    "Rob Hoelz"
-  ]
+  "resources": [
+  ],
+  "source-url": "https://github.com/hoelzro/p6-pod-eod.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.1.1"
 }

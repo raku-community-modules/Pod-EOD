@@ -1,8 +1,5 @@
-use v6;
 use Test;
 use Pod::EOD;
-
-plan *;
 
 sub load-pod($code) {
     my $full-code = "$code\n\$=pod";
@@ -14,8 +11,10 @@ my @features = (
     'module My::Module {}',
 );
 
+plan 2 * @features;
+
 for @features -> $feature {
-    my $pod = load-pod(qq:to/END_PERL6/);
+    my $pod = load-pod(qq:to/CODE/);
     #| Example Feature!
     $feature
 
@@ -24,7 +23,7 @@ for @features -> $feature {
     Example
     =end head1
 
-    END_PERL6
+    CODE
 
     move-declarations-to-end($pod);
 
@@ -32,4 +31,4 @@ for @features -> $feature {
     isa-ok $pod[1], Pod::Block::Declarator, "rearrangement should be successful for feature '$feature'";
 }
 
-done-testing;
+# vim: expandtab shiftwidth=4
