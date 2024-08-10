@@ -1,4 +1,6 @@
 Revision history for Pod::EOD
 
 {{$NEXT}}
+
+0.1.1  2024-08-10T17:05:42+02:00
     - Initial version as a Raku Community Module

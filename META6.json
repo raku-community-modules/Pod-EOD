@@ -17,7 +17,7 @@
   },
   "resources": [
   ],
-  "source-url": "https://github.com/hoelzro/p6-pod-eod.git",
+  "source-url": "https://github.com/raku-community-modules/Pod-EOD.git",
   "tags": [
   ],
   "test-depends": [
